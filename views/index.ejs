@@ -93,10 +93,7 @@
  </a>
  </div>
  </section>
-
- <% for (let produto of produtos) %>
-  <h1>Liz</h1>
- <% } %> 
+ 
 
  <section class="shop_by_category py-5 my-5" id="shop_by_category">
  <div class="container-fluid">
@@ -138,160 +135,27 @@
    
  <h1 class="text-capitalize">Alguns Produtos</h1>
  </div>
+ <% for (let produto of produtos){ %>
  <div class="row mb-5">
+
    <div class="col-md-4 col-12">
      <div class="single_product shadow text-center p-1">
        <div class="product_img">
         <img src="https://ae01.alicdn.com/kf/S77429093a5d74e058724f6df9a4e5002w.jpg_640x640Q90.jpg_.webp"
         class="img img-fluid" alt="Imagem"></a>
        </div>
-       <div class="product-caption my-3">
-         <h4>Plushie Noelle</h4>
+       <div class="product-caption my-3"> 
+         <h4><%= produto.nome %></h4>
+         <h5><%= produto.img %></h5>
          <div class="price">
-           <b><span class="mr-1">R$</span><span>6,99</span></b>
+           <b><span class="mr-1"></span><span><%= produto.preco %></span></b>
          </div>
        <a href="/produto" class="btn btn-primary" type="submit">Mais Sobre o Produto</a>
-       </div>
-     </div>
-   </div>
- <div class="col-md-4 col-12">
- <div class="single_product shadow text-center p-1 mt-small-5 mb-small-5">
- <div class="product_img">
- <img src="https://i.ebayimg.com/images/g/d~AAAOSwy2NfVbgO/s-l1600.jpg"
- class="img img-fluid" alt="Imagem"></a>
- <div class="new_product">
- </div>
- </div>
- <div class="product-caption my-3">
- <h4><a>Plushie Noriaki Kakyoin</a></h4>
- <div class="price">
- <b><span class="mr-1">R$</span><span>6,99</span></b>
- </div>
-   <a href="/produto" class="btn btn-primary" type="submit">Mais Sobre o Produto</a>
- </div>
- </div>
- </div>
- <div class="col-md-4 col-12">
- <div class="single_product shadow text-center p-1">
- <div class="product_img">
- <img src="https://genshinbox.co/wp-content/uploads/2023/09/Genshin-Plushies-%E2%80%93-Wriothesley-Plush-Doll.jpg"
- class="img img-fluid" alt="Imagem"></a>
- <div class="new_product">
- </div>
- </div>
- <div class="product-caption my-3">
- <h4><a>Plushie Wriothesley</a></h4>
- <div class="price">
- <b><span class="mr-1">R$</span><span>6,99</span></b>
- </div>
-   <a href="/produto" class="btn btn-primary" type="submit">Mais Sobre o Produto</a>
- </div>
- </div>
- </div>
- </div>
- <div class="row">
- <div class="col-md-4 col-12">
- <div class="single_product shadow text-center p-1">
- <div class="product_img">
- <img src="https://m.media-amazon.com/images/I/61ezhNzsFFL._AC_UF894,1000_QL80_.jpg"
- class="img img-fluid" alt="Imagem"></a>
- <div class="new_product">
- </div>
- </div>
- <div class="product-caption my-3">
- <h4><a>Plushie Neuvillette</a></h4>
- <div class="price">
- <b><span class="mr-1">R$</span><span>6,99</span></b>
- </div>
-   <a href="/produto" class="btn btn-primary" type="submit">Mais Sobre o Produto</a>
- </div>
- </div>
- </div>
- <div class="col-md-4 col-12">
- <div class="single_product shadow text-center p-1 mt-small-5 mb-small-5">
- <div class="product_img">
- <img src="https://jjba.shop/wp-content/uploads/2021/10/JoJos-Bizarre-Adventure-Tomonui-Plush-Doll-JOSEPH-JOESTAR-Battle-Tendency-new.jpg"
- class="img img-fluid" alt="Imagem"></a>
- <div class="new_product">
- </div>
- </div>
- <div class="product-caption my-3">
- <h4><a>Plushie Joseph</a></h4>
- <div class="price">
- <b><span class="mr-1">R$</span><span>6,99</span></b>
- </div>
-   <a href="/produto" class="btn btn-primary" type="submit">Mais Sobre o Produto</a>
- </div>
- </div>
- </div>
- <div class="col-md-4 col-12">
- <div class="single_product shadow text-center p-1">
- <div class="product_img">
- <img src="https://i.ebayimg.com/images/g/SLIAAOSwIIFirUJj/s-l1600.jpg"
- class="img img-fluid" alt="Imagem"></a>
- <div class="new_product">
- </div>
- </div>
- <div class="product-caption my-3">
- <h4><a>Plushie Zhongli</a></h4>
- <div class="price">
- <b><span class="mr-1">R$</span><span>6,99</span></b>
- </div>
-   <a href="/produto" class="btn btn-primary" type="submit">Mais Sobre o Produto</a>
- </div>
- </div>
- </div>
- <div class="col-md-4 col-12">
- <div class="single_product shadow text-center p-1">
- <div class="product_img">
- <img src="https://toysonejapan.com/cdn/shop/products/s-l1600_22_8a7470e1-668c-48c2-91dc-7d60efc3108a_1024x1024.jpg?v=1675046966"
- class="img img-fluid" alt="Imagem"></a>
- <div class="new_product">
- </div>
- </div>
- <div class="product-caption my-3">
- <h4><a>Plushie Kazuha</a></h4>
- <div class="price">
- <b><span class="mr-1">R$</span><span>6,99</span></b>
- </div>
-   <a href="/produto" class="btn btn-primary" type="submit">Mais Sobre o Produto</a>
- </div>
- </div>
- </div>
- <div class="col-md-4 col-12">
- <div class="single_product shadow text-center p-1">
- <div class="product_img">
- <img src="https://i.ebayimg.com/images/g/Ex4AAOSwbMBiN21Q/s-l1200.webp"
- class="img img-fluid" alt="Imagem"></a>
- <div class="new_product">
- </div>
- </div>
- <div class="product-caption my-3">
- <h4><a>Plushie Kars</a></h4>
- <div class="price">
- <b><span class="mr-1">R$</span><span>6,99</span></b>
- </div>
-   <a href="/produto" class="btn btn-primary" type="submit">Mais Sobre o Produto</a>
- </div>
- </div>
- </div>
- <div class="col-md-4 col-12">
- <div class="single_product shadow text-center p-1">
- <div class="product_img">
- <img src="https://img.fruugo.com/product/5/53/942292535_max.jpg"
- class="img img-fluid" alt="Imagem"></a>
- <div class="new_product">
- </div>
- </div>
- <div class="product-caption my-3">
- <h4><a>Plushie Barbados</a></h4>
- <div class="price">
- <b><span class="mr-1">R$</span><span>6,99</span></b>
- </div>
-   <a href="/produto" class="btn btn-primary" type="submit">Mais Sobre o Produto</a>
- </div>
- </div>
- </div>
+      </div>
+      </div>
+    </div>
+  </div>
+ <% } %>
  </div>
  </section>
  
